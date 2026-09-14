@@ -1,0 +1,41 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.7",
+  "rust": "rustc 1.98.1 (48a229cea 2026-09-01)",
+  "binary_bytes": 580096,
+  "startup_version_median_ms": 7.601,
+  "startup_version_p95_ms": 11.717,
+  "idle_working_set_bytes": 4743168,
+  "pipe_to_socket_4byte_median_us": 18.7,
+  "pipe_to_socket_4byte_p95_us": 36.1,
+  "echo_payload_mib": 256,
+  "echo_rounds": [
+    {
+      "seconds": 0.2913,
+      "nc_cpu_seconds": 0.234375,
+      "payload_mib_per_second": 878.8
+    },
+    {
+      "seconds": 0.3519,
+      "nc_cpu_seconds": 0.25,
+      "payload_mib_per_second": 727.5
+    },
+    {
+      "seconds": 0.3779,
+      "nc_cpu_seconds": 0.25,
+      "payload_mib_per_second": 677.4
+    },
+    {
+      "seconds": 0.342,
+      "nc_cpu_seconds": 0.28125,
+      "payload_mib_per_second": 748.6
+    },
+    {
+      "seconds": 0.2938,
+      "nc_cpu_seconds": 0.3125,
+      "payload_mib_per_second": 871.4
+    }
+  ],
+  "echo_sha256": "486cc817b95d853d3c357ff283b204c0144bd255e73fe2deb1389493b257e3c0",
+  "notes": "Warm local runs; echo transfers payload in each direction simultaneously; reported rate is payload/elapsed, not sum of both directions. Includes Python peer and filesystem I/O/cache. Latency is pipe-to-socket, not RTT. Memory is one connected idle sample."
+}
