@@ -1,0 +1,26 @@
+name: Bug report
+description: Report incorrect transport, terminal, encoding, or CLI behavior.
+labels: [bug]
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include nc version/commit, OS, shell/terminal, and whether stdin/stdout are redirected.
+      placeholder: Windows 11, cmd.exe in Windows Terminal, nc 1.0.0, stdout redirected
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Provide the exact commands, a minimal peer/server, and expected versus actual results. Remove credentials.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: bytes
+    attributes:
+      label: Relevant bytes or logs
+      description: For byte corruption, provide a short hex sample or input/output hashes. For terminal issues, include the selected encoding.
+      render: text
